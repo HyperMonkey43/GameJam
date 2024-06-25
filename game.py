@@ -63,17 +63,12 @@ class Game:
                         pygame.quit()
                         exit()
 
-        pygame.display.update()         
-
-    def offloadDeadEnemies(self, enemyList):
-        for i in enemyList:
-            if i.delete:
-                enemyList.remove(i) 
-
+        pygame.display.update()    
+             
     def drawMultiple(self, listOfTextures, offset):
         if len(listOfTextures) > 0:
             for i in listOfTextures:
-                self.screen.blit(i.texture, (i.rect.x - offset[0], i.rect.y - offset[1]))   
+                self.screen.blit(i.texture, (i.rect.x - offset[0], i.rect.y - offset[1]))  
 
     def update(self):
         pygame.display.update()
