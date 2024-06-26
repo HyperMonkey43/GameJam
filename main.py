@@ -10,7 +10,7 @@ def staticloadEntities():
     backgrounds = [] 
     
     for i in range(2):
-        backgrounds.append(entity.Entity(game.resolution, "Assets/Background.png",(i * game.resolution.x, 0), True))
+        backgrounds.append(entity.Entity(game.resolution, "Assets/background/Background.png",(i * game.resolution.x, 0), True))
         
 def draw():
     game.drawMultiple(backgrounds, (0, 0))
